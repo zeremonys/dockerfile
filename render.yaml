@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: slimpdf-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: "*"
